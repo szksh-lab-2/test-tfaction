@@ -6,8 +6,8 @@ jobs:
     timeout-minutes: 15
     runs-on: ubuntu-latest
     permissions:
-      id-token: write # For OIDC
-      contents: read # To checkout private repositories
+      contents: write
+      pull-requests: write
     env:
       TFACTION_TARGET: terragrunt
       TFACTION_WORKING_DIR: terragrunt
