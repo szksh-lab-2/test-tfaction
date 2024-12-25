@@ -11,5 +11,5 @@ registries:
 - type: standard
   ref: v4.283.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: gruntwork-io/terragrunt@v0.69.3
+- name: gruntwork-io/terragrunt@v0.71.1
 - name: opentofu/opentofu@v1.8.7
