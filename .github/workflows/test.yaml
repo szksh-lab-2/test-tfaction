@@ -22,12 +22,12 @@ jobs:
           AQUA_GITHUB_TOKEN: ${{github.token}}
 
       - name: Set up
-        uses: suzuki-shunsuke/tfaction/setup@1eb11300c759d17050d0a81c3e8f1c6fa89b39d9 # v1.13.1
+        uses: suzuki-shunsuke/tfaction/setup@98da3c71e2f14697e6cd56217d4a62882586e4da # v1.13.3
         with:
           github_token: ${{github.token}}
 
       - name: Plan
-        uses: suzuki-shunsuke/tfaction/plan@1eb11300c759d17050d0a81c3e8f1c6fa89b39d9 # v1.13.1
+        uses: suzuki-shunsuke/tfaction/plan@98da3c71e2f14697e6cd56217d4a62882586e4da # v1.13.3
         with:
           github_token: ${{github.token}}
         env:
