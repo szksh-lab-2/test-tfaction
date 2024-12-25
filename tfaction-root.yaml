@@ -1,0 +1,9 @@
+---
+plan_workflow_name: test # Mandatory
+target_groups:
+  - working_directory: "terragrunt"
+    target: "terragrunt"
+    terraform_command: terragrunt
+    env:
+      TERRAGRUNT_TFPATH: "tofu"
+      TERRAGRUNT_LOG_DISABLE: "true"
