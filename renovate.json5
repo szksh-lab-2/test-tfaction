@@ -5,13 +5,15 @@
     'github>suzuki-shunsuke/renovate-config#2.5.0',
     'github>suzuki-shunsuke/renovate-config:nolimit#2.5.0',
   ],
-  labels: ['renovate-change'],
+  labels: [
+    'renovate-change',
+  ],
   packageRules: [
     {
       additionalBranchPrefix: '{{packageFileDir}}-',
       commitMessageSuffix: '({{packageFileDir}})',
-      matchPackagePatterns: [
-        '.*',
+      matchPackageNames: [
+        '/.*/',
       ],
     },
   ],
