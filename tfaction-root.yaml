@@ -1,7 +1,5 @@
 ---
 plan_workflow_name: test # Mandatory
-tflint:
-  fix: false
 target_groups:
   - working_directory: "terragrunt"
     target: "terragrunt"
