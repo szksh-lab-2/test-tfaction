@@ -5,9 +5,7 @@ jobs:
   test-module:
     timeout-minutes: 15
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
+    permissions: {}
     env:
       TFACTION_TARGET: module
       TFACTION_JOB_TYPE: terraform
