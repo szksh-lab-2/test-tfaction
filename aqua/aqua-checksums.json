@@ -21,36 +21,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/open-policy-agent/conftest/v0.56.0/conftest_0.56.0_Darwin_arm64.tar.gz",
-      "checksum": "F84ECD403BF2F3ECFF508BBEE4F3A4EC7BEF5290A472C0E902501354A2277A59",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/open-policy-agent/conftest/v0.56.0/conftest_0.56.0_Darwin_x86_64.tar.gz",
-      "checksum": "76864DBB51B1A932373375A9514802EBB65F9700470C1E69A692A2EC805CEC50",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/open-policy-agent/conftest/v0.56.0/conftest_0.56.0_Linux_arm64.tar.gz",
-      "checksum": "86334E4CA57B991F0DCA0DD3D011270EDDA50FDFF2B2E208954EA639BB1C99EC",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/open-policy-agent/conftest/v0.56.0/conftest_0.56.0_Linux_x86_64.tar.gz",
-      "checksum": "620F41640D63BBDE1646A108CE2816BA54C980466CEEBB7E754DDA2D508E8CD5",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/open-policy-agent/conftest/v0.56.0/conftest_0.56.0_Windows_arm64.zip",
-      "checksum": "1AF2BE9202507A17B800E6E90923284FADCAF2BA6BEC75B0DA3D69549DCB291F",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/open-policy-agent/conftest/v0.56.0/conftest_0.56.0_Windows_x86_64.zip",
-      "checksum": "22806C17BCF7003139885526CD1DF158A6D3A141D9D92EE461F9AD679F0BAAE2",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/reviewdog/reviewdog/v0.20.3/reviewdog_0.20.3_Darwin_arm64.tar.gz",
       "checksum": "A7FBF41913CE5B6F1872D10C136139B7A849190F4F1F0DC1ED4BF74C636F22A2",
       "algorithm": "sha256"
@@ -138,36 +108,6 @@
     {
       "id": "github_release/github.com/suzuki-shunsuke/tfaction-go/v0.2.3/tfaction_windows_arm64.tar.gz",
       "checksum": "916C06F5444C84CCE95D7F8CA05E68F657E80224B24CF21B49996B27744448A9",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/terraform-docs/terraform-docs/v0.19.0/terraform-docs-v0.19.0-darwin-amd64.tar.gz",
-      "checksum": "FC3FA55037E35F1B76D1C7E84ED5A8B412EA6AED8264DF050E1F692FAD1DAE29",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/terraform-docs/terraform-docs/v0.19.0/terraform-docs-v0.19.0-darwin-arm64.tar.gz",
-      "checksum": "C4E8D863571B8D5102089A22500426A18094855040EB07E4B83E4DFD1816DD23",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/terraform-docs/terraform-docs/v0.19.0/terraform-docs-v0.19.0-linux-amd64.tar.gz",
-      "checksum": "DD741A0ECE81059A478684B414D95D72B8B74FA58F50AC4036B4E8B56130D64B",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/terraform-docs/terraform-docs/v0.19.0/terraform-docs-v0.19.0-linux-arm64.tar.gz",
-      "checksum": "EBDA7DDA3A1F678E9E3EF2F091C97B43F34A5A1B52FB9B1D3F44A003F481E8B5",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/terraform-docs/terraform-docs/v0.19.0/terraform-docs-v0.19.0-windows-amd64.zip",
-      "checksum": "9D6D63B6C57FA82EC4BB61E7CDF504F52470FAE3E46E293A7E9FCCCBADDB1BA7",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/terraform-docs/terraform-docs/v0.19.0/terraform-docs-v0.19.0-windows-arm64.zip",
-      "checksum": "87BE154D78DC594E01CCEAFBB93033B113F032696ECBC8C39D7A1214429602A6",
       "algorithm": "sha256"
     },
     {
