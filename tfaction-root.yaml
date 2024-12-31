@@ -2,6 +2,9 @@
 plan_workflow_name: test # Mandatory
 tflint:
   fix: true
+drift_detection:
+  minimum_detection_interval: 120 # 120 hours (5 days)
+  num_of_issues: 3 # 3 working directories are checked per workflow run. By default 1 working directory is checked.
 target_groups:
   - working_directory: "terragrunt"
     target: "terragrunt"
