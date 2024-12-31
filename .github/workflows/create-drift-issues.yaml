@@ -1,0 +1,40 @@
+name: Create drift issues
+on:
+  workflow_dispatch:
+    inputs: {}
+jobs:
+  test:
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Generate token
+        id: generate_token
+        uses: tibdex/github-app-token@3beb63f4bd073e61482598c45c71c1019b59b73a # v2.1.0
+        with:
+          app_id: ${{secrets.APP_ID}}
+          private_key: ${{secrets.APP_PRIVATE_KEY}}
+          # issues:write - Create issues
+          permissions: >-
+            {
+              "issues": "write"
+            }
+          # repository where Drift Detection issues are hosted
+          repositories: >-
+            ["tfaction-example"]
+
+      - uses: aquaproj/aqua-installer@f13c5d2f0357708d85477aabe50fd3f725528745 # v3.1.0
+        with:
+          aqua_version: v2.41.0
+        env:
+          AQUA_GITHUB_TOKEN: ${{steps.generate_token.outputs.token}}
+
+      - uses: suzuki-shunsuke/tfaction/js@pr/2167
+        with:
+          action: create-drift-issues
+          github_token: ${{steps.generate_token.outputs.token}}
