@@ -41,8 +41,9 @@ jobs:
           github_token: ${{steps.token.outputs.token}}
 
       - name: Plan
-        uses: suzuki-shunsuke/tfaction/plan@5bab03f77836a1d34a5f89f3c61cf0176b7822c1 # v1.15.1
+        uses: suzuki-shunsuke/tfaction/plan@pr/2248
         with:
           github_token: ${{steps.token.outputs.token}}
         env:
           GITHUB_TOKEN: ${{steps.token.outputs.token}}
+          TFACTION_DEBUG: "true"
