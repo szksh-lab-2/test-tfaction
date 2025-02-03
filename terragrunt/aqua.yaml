@@ -9,7 +9,7 @@
 #   - all
 registries:
 - type: standard
-  ref: v4.305.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.306.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: gruntwork-io/terragrunt@v0.72.6
 - name: opentofu/opentofu@v1.9.0
