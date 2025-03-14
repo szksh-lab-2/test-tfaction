@@ -35,8 +35,8 @@ jobs:
           aqua_version: v2.45.1
         env:
           AQUA_GITHUB_TOKEN: ${{github.token}}
-      - uses: suzuki-shunsuke/tfaction/install@pr/2176
+      - uses: suzuki-shunsuke/tfaction/install@latest
       - name: Test Module
-        uses: suzuki-shunsuke/tfaction/test-module@pr/2176
+        uses: suzuki-shunsuke/tfaction/test-module@latest
         with:
           github_token: ${{steps.token.outputs.token}}
