@@ -113,7 +113,7 @@ jobs:
               "${{github.event.repository.name}}"
             ]
 
-      - uses: suzuki-shunsuke/tfaction/create-follow-up-pr@98cdb1548f3638f49ed35a88dac04b46ad65478e # v1.15.2
+      - uses: suzuki-shunsuke/tfaction/create-follow-up-pr@pr/2431
         if: failure()
         with:
           github_token: ${{steps.follow_up_pr_token.outputs.token}}
