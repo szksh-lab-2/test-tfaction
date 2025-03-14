@@ -117,3 +117,5 @@ jobs:
         if: failure()
         with:
           github_token: ${{steps.follow_up_pr_token.outputs.token}}
+        env:
+          TFACTION_DEBUG: "true"
