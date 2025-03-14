@@ -1,6 +1,7 @@
 ---
 plan_workflow_name: test # Mandatory
-follow_up_pr_group_label_enabled: true
+follow_up_pr_group_label:
+  enabled: true
 tflint:
   fix: true
 drift_detection:
