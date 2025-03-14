@@ -2,6 +2,7 @@
 plan_workflow_name: test # Mandatory
 follow_up_pr_group_label:
   enabled: true
+  prefix: pr/
 tflint:
   fix: true
 drift_detection:
