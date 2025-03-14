@@ -12,3 +12,5 @@ target_groups:
     env:
       TERRAGRUNT_TFPATH: "tofu"
       TERRAGRUNT_LOG_DISABLE: "true"
+  - working_directory: "foo"
+    target: "foo"
