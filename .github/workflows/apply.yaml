@@ -28,7 +28,7 @@ jobs:
         id: aqua_installer_token
         uses: tibdex/github-app-token@3beb63f4bd073e61482598c45c71c1019b59b73a # v2.1.0
         with:
-          app_id: ${{ secrets.APP_ID }}
+          app_id: ${{ vars.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
           permissions: >-
             {
@@ -49,7 +49,7 @@ jobs:
         id: setup_token
         uses: tibdex/github-app-token@3beb63f4bd073e61482598c45c71c1019b59b73a # v2.1.0
         with:
-          app_id: ${{ secrets.APP_ID }}
+          app_id: ${{ vars.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
           # pull_requests:write - Post comments
           # issues:write - Update drift issues
@@ -75,7 +75,7 @@ jobs:
         id: apply_token
         uses: tibdex/github-app-token@3beb63f4bd073e61482598c45c71c1019b59b73a # v2.1.0
         with:
-          app_id: ${{ secrets.APP_ID }}
+          app_id: ${{ vars.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
           # pull_requests:write - Post comments
           # contents:write - Update related pull requests
@@ -99,7 +99,7 @@ jobs:
         if: failure()
         uses: tibdex/github-app-token@3beb63f4bd073e61482598c45c71c1019b59b73a # v2.1.0
         with:
-          app_id: ${{ secrets.APP_ID }}
+          app_id: ${{ vars.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
           # contents:write - Push commits
           # pull_requests:write - Create a pull request
