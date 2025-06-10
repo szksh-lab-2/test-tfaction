@@ -9,7 +9,7 @@ jobs:
       contents: read # For checkout a private repository
       pull-requests: write # For ci-info and github-comment
     outputs:
-      targets: ${{ steps.list-targets.outputs.targets }}
+      modules: ${{ steps.list-targets.outputs.modules }}
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
