@@ -2,8 +2,8 @@
   extends: [
     'github>aquaproj/aqua-renovate-config#2.8.1',
     'github>aquaproj/aqua-renovate-config:file#2.8.1(aqua/imports/[^/]*\\.ya?ml$)',
-    'github>suzuki-shunsuke/renovate-config#2.5.0',
-    'github>suzuki-shunsuke/renovate-config:nolimit#2.5.0',
+    'github>suzuki-shunsuke/renovate-config#3.2.1',
+    'github>suzuki-shunsuke/renovate-config:nolimit#3.2.1',
   ],
   labels: [
     'renovate-change',
