@@ -36,12 +36,12 @@ jobs:
             ["${{github.event.repository.name}}"]
 
       - name: Set up
-        uses: suzuki-shunsuke/tfaction/setup@d8646dcdc60933280ab9a229bd2a8d8c6390e1b6 # v1.15.5
+        uses: suzuki-shunsuke/tfaction/setup@0627b0a1dfec9479a3fa73a5831be7979661b7eb # v2.0.4
         with:
           github_token: ${{steps.token.outputs.token}}
 
       - name: Plan
-        uses: suzuki-shunsuke/tfaction/plan@d8646dcdc60933280ab9a229bd2a8d8c6390e1b6 # v1.15.5
+        uses: suzuki-shunsuke/tfaction/plan@0627b0a1dfec9479a3fa73a5831be7979661b7eb # v2.0.4
         with:
           github_token: ${{steps.token.outputs.token}}
         env:
