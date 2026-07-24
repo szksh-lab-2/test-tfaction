@@ -64,7 +64,7 @@ jobs:
             ]
 
       - name: Set up
-        uses: suzuki-shunsuke/tfaction/setup@98cdb1548f3638f49ed35a88dac04b46ad65478e # v1.15.2
+        uses: suzuki-shunsuke/tfaction/setup@d0d52eb8b2ff13d6e27ac9653d038df384e58827 # v2.0.5
         with:
           github_token: ${{ steps.setup_token.outputs.token }}
           ssh_key: ${{ secrets.TERRAFORM_PRIVATE_MODULE_SSH_KEY }} # This isn't needed if you don't use SSH key to checkout private Terraform Modules
@@ -90,7 +90,7 @@ jobs:
             ]
 
       - name: Apply
-        uses: suzuki-shunsuke/tfaction/apply@98cdb1548f3638f49ed35a88dac04b46ad65478e # v1.15.2
+        uses: suzuki-shunsuke/tfaction/apply@d0d52eb8b2ff13d6e27ac9653d038df384e58827 # v2.0.5
         with:
           github_token: ${{ steps.apply_token.outputs.token }}
 
